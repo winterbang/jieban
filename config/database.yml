@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  database: jieban_development
+  user: postgres
+  password: 123456
+  host: localhost
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  database: jieban_test
+
+production:
+  <<: *default
+  database: jieban_production

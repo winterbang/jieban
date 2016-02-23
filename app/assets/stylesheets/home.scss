@@ -1,0 +1,29 @@
+.month-filter {
+  border-bottom: 1px solid #e4e4e4;
+}
+.month-filter ul {
+  overflow: hidden;
+  list-style: none;
+  margin-bottom: 3px;
+}
+.month-filter ul li {
+  min-width: 50px;
+  float: left;
+  margin-right: 19px;
+}
+.month-filter ul li a span {
+  font-size: 30px;
+}
+.destination-filter {
+  margin: 10px 0 20px;
+  ul {
+    overflow: hidden;
+    li {
+      float: left;
+      a {
+        padding: 0 7px;
+        color:#a3a3a3;
+      }
+    }
+  }
+}
