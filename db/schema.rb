@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20160223121335) do
   end
 
   create_table "travel_others", force: :cascade do |t|
-    t.integer  "user_id"
+    t.integer  "user_other_id"
     t.string   "point_of_departure"
     t.string   "destination"
     t.date     "date_of_departure"
@@ -56,8 +56,9 @@ ActiveRecord::Schema.define(version: 20160223121335) do
 
   create_table "user_others", force: :cascade do |t|
     t.string  "name"
-    t.integer "qq"
+    t.integer "qq",      limit: 8
     t.string  "weibo"
+    t.string  "douban"
     t.string  "img_url"
   end
 
